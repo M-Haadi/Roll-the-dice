@@ -51,7 +51,7 @@ start_btn.disabled=true;
         track_p1[prev_no].style.backgroundColor="";
     })
     prev_no += rand_no2;   //adding index to previous so that player moves forward from previous location
-    img_p1[prev_no].src = "../pics/pikachu.png";
+    img_p1[prev_no].src = "pics/pikachu.png";
     track_p1[prev_no].style.backgroundColor="rgb(249, 104, 71)";
     }
 
@@ -81,7 +81,7 @@ start_btn.disabled=true;
     img.src = "";
   });
   prev_no_for_bot += rand_no_for_bot;
-  img_p2[prev_no_for_bot].src = "../pics/viking.png";
+  img_p2[prev_no_for_bot].src = "pics/viking.png";
 
   let interval_bot=setInterval(()=>{
    if(light_status.innerHTML=="Green Light!")
@@ -103,7 +103,7 @@ start_btn.disabled=true;
   img_p2.forEach((img) => {
     img.src = "";
   });
-  img_p2[prev_no_for_bot].src = "../pics/viking.png";
+  img_p2[prev_no_for_bot].src = "pics/viking.png";
    }
 },400)
 
