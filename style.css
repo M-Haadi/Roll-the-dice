@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: 
+    border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.container{
+    background:linear-gradient(to right,rgb(254, 134, 134),rgb(234, 234, 253));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    cursor: pointer;
+}
+
+.game-container{
+    /* background:linear-gradient(to right,rgb(237, 76, 76),rgb(162, 162, 240)); */
+    width: 95%;
+    height: 100vh;
+    padding: .4rem;
+  
+}
+
+.start-btn,.reset-btn,.dice{
+padding: .5rem 1rem;
+margin: 10px;
+}
+.who-won{
+   background-color: rgb(3, 3, 3); 
+   padding: .5rem .5rem;
+   color: aliceblue;
+}
+.game-container h1{
+ text-align: center;
+  
+}
+
+.green-red-light-cont{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;   
+    color: white;
+}
+.light{
+    background-color: rgb(69, 247, 69);
+    box-shadow: 0px 0px 30px rgb(38, 255, 38) ;
+    /* background-color: rgb(245, 53, 27);
+    box-shadow: 0px 0px 30px rgb(249, 104, 71) ; */
+    height: 80px;
+    width: 100%;
+    margin: 1rem 0;
+    
+}
+
+.racing-track-container{
+    display: grid;
+    gap: 10px;
+}
+.track-p1-cont,.track-p2-cont{
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    grid-auto-rows: 60px;
+    gap: 5px;
+    text-align: center;
+    padding: .5rem .5rem;
+}
+
+.track-p1 img,.track-p2 img{
+    width: 30px;
+    padding: .6rem 0;
+
+}
+
+.track-p1-cont .track-p1,.track-p2-cont .track-p2{
+   border: 2px solid rgb(255, 255, 255);
+   background-color: aliceblue;
+}
+.track-p2-cont .track-p2{
+    background-color: rgb(203, 203, 203);
+}
